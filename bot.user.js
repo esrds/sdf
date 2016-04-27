@@ -21,8 +21,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 
 // ==UserScript==
-// @name        AposBot
-// @namespace   AposBot
+// @name        P-PROGAME
+// @namespace   P-PROGAME
 // @include     http://agar.io/*
 // @version     3.651
 // @grant       none
@@ -78,7 +78,7 @@ var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
                 window.jQuery("#" + prefix + "Dialog").show();
             }
 
-            $.get('https://raw.githubusercontent.com/Apostolique/Agar.io-bot/master/bot.user.js?' + Math.floor((Math.random() * 1000000) + 1), function(data) {
+            $.get('https://raw.githubusercontent.com/Apostolique/esrds/sdf/bot.user.js?' + Math.floor((Math.random() * 1000000) + 1), function(data) {
                 var latestVersion = data.replace(/(\r\n|\n|\r)/gm,"");
                 latestVersion = latestVersion.substring(latestVersion.indexOf("// @version")+11,latestVersion.indexOf("// @grant"));
 
@@ -87,7 +87,7 @@ var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
                 if(latestVersion > myVersion)
                 {
-                    update("aposBot", "bot.user.js", "https://github.com/Apostolique/Agar.io-bot/blob/" + sha + "/bot.user.js/");
+                    update("aposBot", "bot.user.js", "https://github.com/esrds/sdf/blob/" + sha + "/bot.user.js/");
                 }
                 window.log('Current bot.user.js Version: ' + myVersion + " on Github: " + latestVersion);
             });
@@ -119,7 +119,7 @@ window.botList = window.botList || [];
 window.botList.push(new QuickBot());*/
 
 function AposBot() {
-    this.name = "AposBot " + aposBotVersion;
+    this.name = "P-PROGaME " + aposBotVersion;
 
     this.toggleFollow = false;
     this.keyAction = function(key) {
