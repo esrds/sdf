@@ -24,12 +24,12 @@ SOFTWARE.*/
 // @name        P-PROGAME
 // @namespace   P-PROGAME
 // @include     http://agar.io/*
-// @version     3.651
+// @version     1.1
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
 
-var aposBotVersion = 3.651;
+var aposBotVersion = 1.1;
 
 //TODO: Team mode
 //      Detect when people are merging
@@ -58,7 +58,7 @@ window.log = function(message){
 var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 (function () {
     window.jQuery.ajax({
-            url: "https://api.github.com/repos/apostolique/Agar.io-bot/git/refs/heads/master",
+            url: "https://api.github.com/repos/esrds/sdf/git/refs/heads/master",
             cache: false,
             dataType: "jsonp"
         }).done(function(data) {
